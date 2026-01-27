@@ -3,188 +3,321 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
+    <title>Pesh Moh - Full Stack Developer</title>
     <link rel="stylesheet" href="main.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/2Ys9np-LogoMakr.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-autoplay@1.0.2/dist/css/splide-extension-autoplay.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
    <nav>
     <div class="container">
         <div class="logo">
-            <a href=""> <img src="images/2Ys9np-LogoMakr.png" alt="logo"></a>
+            <a href="#"> 
+                <img src="images/2Ys9np-LogoMakr.png" alt="logo">
+                <span class="logo-text">Pesh Moh</span>
+            </a>
         </div>
+        
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+        
+        <button class="menu-btn" onclick="showSidebar()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        
         <ul class="sidebar">
-          <li onclick=hideSidebar() class="cancel">
-            <a href=""><i class="fa-solid fa-xmark"></i></a></li>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#services">SERVICES</a></li>
-          <li><a href="#projects">PROJECTS</a></li>
-          <li><a href="#contact">CONTACT</a></li>
+          <li onclick="hideSidebar()" class="cancel">
+            <a href=""><i class="fa-solid fa-xmark"></i></a>
+          </li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-            <div class="nav-links">
-                
-                <div class="links"><a href="#">HOME</a></div>
-                <div class="links"><a href="#about">ABOUT</a></div>
-                <div class="links"><a href="#services">SERVICES</a></div>
-                <div class="links"><a href="#projects">PROJECTS</a></div>
-                <div class="links"><a href="#contact">CONTACT</a></div>
-                <button class="menu-btn" onclick=showSidebar()><i class="fa-solid fa-bars"></i></button>
-             
-            </div>
     </div>
    </nav>
-<div class="header-content">
-    <div class="flex-cont">
 
+<div class="header-content">
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+    
+    <div class="flex-cont">
         <div class="first-p">
-         <p>WELCOME TO MY WORLD</p>
+            WELCOME TO MY WORLD
         </div>
 
         <div class="first-h">
-            <h1>Hi, I'm <span>Pesh Moh a</span><br>
-            <span class ="auto-type">Developer  </span>
+            <h1>Hi, I'm <span class="gradient-text">Pesh Moh</span><br>
+                a <span class="auto-type">Full Stack Developer</span>
             </h1>
         </div>
 
         <p class="second-p">
-    As a full stack developer, I streamline processes and enhance <br>
-    user experiences. By integrating both front-end and back-end <br>
-    technologies, I ensure seamless interaction across all platforms.
-</p>
+            Crafting seamless digital experiences from front to back. I blend creativity with<br>
+            cutting-edge technology to build web applications that make an impact.
+        </p>
 
         <div class="header-socialm">
-          <div>
-            <h6>FIND WITH ME</h6>
+          <div class="social-group">
+            <h6>FIND ME ON</h6>
             <ul class="sosialm">
-              <li><a href="https://github.com/Peshmoh?tab=repositories"><i class="fab fa-github sm" style="color: #333;"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/pesh-moh-480807294/"><i class="fab fa-linkedin-in sm" style="color: #0072b1;"></i></a></li>
-              <li><a href="https://x.com/pesh_moh?t=WIBb7Z1lXXKsOzgfykrL8Q&s=08"><i class="fas fa-times sm" style="color: #000;"></i></a></li>
+              <li><a href="https://github.com/Peshmoh?tab=repositories" target="_blank"><i class="fab fa-github sm"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/pesh-moh-480807294/" target="_blank"><i class="fab fa-linkedin-in sm"></i></a></li>
+              <li><a href="https://x.com/pesh_moh?t=WIBb7Z1lXXKsOzgfykrL8Q&s=08" target="_blank"><i class="fab fa-x-twitter sm"></i></a></li>
             </ul>
           </div>
           
-          <div>
-            <h6>BEST SKILL ON</h6>
+          <div class="social-group">
+            <h6>CORE STACK</h6>
             <ul class="sosialm">
-              <li><a href=""><i class="fab fa-react sm" style="color: #61DAFB;"></i></a></li>
-              <li><a href=""><i class="fab fa-node-js sm" style="color: #339933;"></i></a></li>
-              <li><a href=""><i class="fab fa-css3-alt sm" style="color: #1572B6;"></i></a></li>
+              <li class="skill-badge"><i class="fab fa-laravel"></i></li>
+              <li class="skill-badge"><i class="fab fa-react"></i></li>
+              <li class="skill-badge"><i class="fab fa-node-js"></i></li>
             </ul>
           </div>
-        
-      
+        </div>
     </div>
- </div>
     
-        <img src="images/mypic.jpg"class="my-pic" alt="my-pic" height="400px" style="border-radius: 5px;">
-    
-</div>
+    <div class="hero-image-wrapper">
+        <div class="image-glow"></div>
+        <img src="images/mypic.jpg" class="my-pic" alt="my-pic">
+        <div class="floating-badge badge-1">
+            <i class="fas fa-code"></i>
+            <span>Full Stack</span>
+        </div>
+        <div class="floating-badge badge-2">
+            <i class="fas fa-rocket"></i>
+            <span>Laravel Pro</span>
+        </div>
+    </div>
 </div>
 
 <div class="aboutme" id="about">
   <div class="aboutp">
-      <h1>ABOUT ME</h1>
-      <p>Here you will find more information about me, what I do, and my current skills mostly in terms of <br> programming and technology</p>
+      <h1>ABOUT <span class="gradient-text">ME</span></h1>
+      <p>Discover my journey, expertise, and the technologies I master</p>
   </div>
- <div class="aboutcontent">
+  
+  <div class="aboutcontent">
       <div class="left-part">
           <h2>Get to know me!</h2>
-          <p>I'm a fullstack Focused Web Developer building and managing the Front- <br>end & backend of Websites and Web Applications that leads to the success of the <br> overall product. Check out some of my work in the Projects section.
-          <br> <br>I also like sharing content related to the stuff that I have learned over the <br> years in Web Development so it can help other people of the Dev <br>Community. Feel free to Connect or Follow me on my  <a href="https://www.linkedin.com/in/pesh-moh-480807294/"><span>linkedin</span> </a> <br> <a href=""><span>Instagram</span></a> where I post useful content related to Web Development and <br> Programming <br> <br>I'm open to Job opportunities where I can contribute, learn and grow. If <br> you have a good opportunity that matches my skills and experience then <br>don't hesitate to contact me.
+          <p>I'm a <strong>Full Stack Developer</strong> specializing in building high-performance web and mobile applications. With deep expertise in both frontend and backend technologies, I create complete digital solutions that are scalable, maintainable, and user-centric.
           </p>
+          <p>My technical arsenal includes <strong>Laravel</strong> for robust backend architectures, <strong>React</strong> and <strong>Vue.js</strong> for dynamic user interfaces, and <strong>Node.js</strong> for real-time applications. I also develop mobile applications using <strong>Kotlin</strong> and <strong>Flutter</strong>, ensuring seamless experiences across all platforms.
+          </p>
+          <p>Beyond coding, I'm passionate about sharing knowledge with the developer community. You can find me on <a href="https://www.linkedin.com/in/pesh-moh-480807294/" target="_blank"><span>LinkedIn</span></a> where I discuss best practices, emerging technologies, and software architecture patterns.
+          </p>
+          <p><strong>I'm currently open to new opportunities</strong> where I can contribute my expertise in full-stack development, collaborate with innovative teams, and work on challenging projects that make a real impact. If you're looking for a dedicated developer who can handle everything from database design to pixel-perfect interfaces, let's connect.
+          </p>
+          
+          <div class="stats-grid">
+              <div class="stat-card">
+                  <div class="stat-number">15+</div>
+                  <div class="stat-label">Projects Completed</div>
+              </div>
+              <div class="stat-card">
+                  <div class="stat-number">8+</div>
+                  <div class="stat-label">Technologies</div>
+              </div>
+              <div class="stat-card">
+                  <div class="stat-number">100%</div>
+                  <div class="stat-label">Client Satisfaction</div>
+              </div>
+          </div>
       </div>
+      
       <div class="skillcards">
-          <h2>My skills</h2>
-          <div class="skill">
-              <div class="skill-name">HTML <span class="skill-percent">90%</span></div>
-              <div class="skill-bar">
-                  <div class="skill-progress" style="width: 90%;" ></div>
+          <h2>My Tech Stack</h2>
+          
+          <div class="skill-category">
+              <h3><i class="fas fa-star"></i> Core Expertise</h3>
+              <div class="tech-badges">
+                  <div class="tech-badge featured">
+                      <i class="fab fa-laravel"></i>
+                      <span>Laravel</span>
+                  </div>
+                  <div class="tech-badge featured">
+                      <i class="fab fa-react"></i>
+                      <span>React</span>
+                  </div>
+                  <div class="tech-badge featured">
+                      <i class="fab fa-node-js"></i>
+                      <span>Node.js</span>
+                  </div>
               </div>
           </div>
-          <div class="skill">
-              <div class="skill-name">CSS <span class="skill-percent">80%</span></div>
-              <div class="skill-bar">
-                  <div class="skill-progress" style="width: 80%;"></div>
+
+          <div class="skill-category">
+              <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+              <div class="tech-badges">
+                  <div class="tech-badge">
+                      <i class="fab fa-html5"></i>
+                      <span>HTML</span>
+                  </div>
+                  <div class="tech-badge">
+                      <i class="fab fa-css3-alt"></i>
+                      <span>CSS</span>
+                  </div>
+                  <div class="tech-badge">
+                      <i class="fab fa-js"></i>
+                      <span>JavaScript</span>
+                  </div>
+                  <div class="tech-badge">
+                      <i class="fab fa-vuejs"></i>
+                      <span>Vue.js</span>
+                  </div>
               </div>
           </div>
-          <div class="skill">
-              <div class="skill-name">JavaScript <span class="skill-percent">78%</span></div>
-              <div class="skill-bar">
-                  <div class="skill-progress" style="width: 78%;"></div>
+
+          <div class="skill-category">
+              <h3><i class="fas fa-server"></i> Backend</h3>
+              <div class="tech-badges">
+                  <div class="tech-badge">
+                      <i class="fab fa-php"></i>
+                      <span>PHP</span>
+                  </div>
               </div>
           </div>
-          <div class="skill">
-              <div class="skill-name">React<span class="skill-percent">75%</span></div>
-              <div class="skill-bar">
-                  <div class="skill-progress" style="width: 75%;"></div>
+
+          <div class="skill-category">
+              <h3><i class="fas fa-database"></i> Database & ERP</h3>
+              <div class="tech-badges">
+                  <div class="tech-badge">
+                      <i class="fas fa-database"></i>
+                      <span>MySQL</span>
+                  </div>
+                  <div class="tech-badge">
+                      <i class="fas fa-database"></i>
+                      <span>PostgreSQL</span>
+                  </div>
+                  <div class="tech-badge">
+                      <i class="fas fa-leaf"></i>
+                      <span>MongoDB</span>
+                  </div>
+                  <div class="tech-badge">
+                      <i class="fas fa-cogs"></i>
+                      <span>ERP Systems</span>
+                  </div>
               </div>
           </div>
-          <div class="skill">
-              <div class="skill-name">Php <span class="skill-percent">85%</span></div>
-              <div class="skill-bar">
-                  <div class="skill-progress" style="width: 85%;"></div>
+
+          <div class="skill-category">
+              <h3><i class="fas fa-mobile-alt"></i> Mobile</h3>
+              <div class="tech-badges">
+                  <div class="tech-badge">
+                      <i class="fab fa-android"></i>
+                      <span>Kotlin</span>
+                  </div>
+                  <div class="tech-badge">
+                      <i class="fas fa-mobile"></i>
+                      <span>Flutter</span>
+                  </div>
               </div>
           </div>
-          <div class="skill">
-            <div class="skill-name">Node js <span class="skill-percent">85%</span></div>
-            <div class="skill-bar">
-                <div class="skill-progress" style="width: 85%;"></div>
-            </div>
-        </div>
-          <div class="skill">
-              <div class="skill-name">Php<span class="skill-percent">80%</span></div>
-              <div class="skill-bar">
-                  <div class="skill-progress" style="width: 80%;"></div>
-              </div>
-          </div>
+          
           <a href="images/cv.jpg" download="cv.jpg">
-            <button class="download-cv">Download CV</button>
-        </a>
-        
+            <button class="download-cv">
+                <i class="fas fa-download"></i>
+                <span>Download CV</span>
+            </button>
+          </a>
       </div>
- </div>    
+  </div>    
 </div>
 
 <div class="services" id="services">
   <div class="servicep">
-      <h1>SERVICES</h1>
-      <p>Here you will find more information about the services I offer</p>
+      <h1>MY <span class="gradient-text">SERVICES</span></h1>
+      <p>Comprehensive solutions tailored to bring your vision to life</p>
   </div>
+  
   <div class="servicecontent">
       <div class="servicecards">
           <div class="service">
-              <i class="fas fa-desktop" style="color: #FF0000; font-size: 36px;"></i>
-              <h2>Web Design</h2>
-              <p>I offer professional web design services, specializing in creating responsive, user-friendly websites.</p>
+              <div class="service-icon">
+                  <i class="fas fa-desktop"></i>
+              </div>
+              <h2>Web Development</h2>
+              <p>Building responsive, high-performance websites using modern frameworks like Laravel, React, and Vue.js.</p>
+              <div class="service-tech">
+                  <span>Laravel</span>
+                  <span>React</span>
+                  <span>Vue.js</span>
+              </div>
           </div>
+          
           <div class="service">
-              <i class="fas fa-mobile-alt" style="color: #FF0000; font-size: 36px;"></i>
-              <h2>App Design</h2>
-              <p>I offer expert app design services, creating intuitive and engaging mobile applications.</p>
+              <div class="service-icon">
+                  <i class="fas fa-mobile-alt"></i>
+              </div>
+              <h2>Mobile Development</h2>
+              <p>Creating native and cross-platform mobile applications with Flutter and Kotlin for seamless user experiences.</p>
+              <div class="service-tech">
+                  <span>Flutter</span>
+                  <span>Kotlin</span>
+              </div>
           </div>
+          
           <div class="service">
-              <i class="fas fa-server" style="color: #FF0000; font-size: 36px;"></i>
-              <h2>Hosting</h2>
-              <p>I provide reliable hosting services, ensuring optimal performance and security for websites and applications.</p>
+              <div class="service-icon">
+                  <i class="fas fa-server"></i>
+              </div>
+              <h2>Backend Systems</h2>
+              <p>Architecting robust backend solutions with Laravel, Node.js, and optimized database management.</p>
+              <div class="service-tech">
+                  <span>Node.js</span>
+                  <span>Laravel</span>
+                  <span>APIs</span>
+              </div>
           </div>
+          
           <div class="service">
-              <i class="fas fa-database" style="color: #FF0000; font-size: 36px;"></i>
-              <h2>Data Base</h2>
-              <p>I specialize in database services, offering efficient solutions for storing, managing, and retrieving data.</p>
+              <div class="service-icon">
+                  <i class="fas fa-database"></i>
+              </div>
+              <h2>Database Design</h2>
+              <p>Designing efficient database architectures with MySQL, PostgreSQL, and MongoDB for optimal performance.</p>
+              <div class="service-tech">
+                  <span>MySQL</span>
+                  <span>PostgreSQL</span>
+                  <span>MongoDB</span>
+              </div>
           </div>
+          
           <div class="service">
-              <i class="fas fa-code" style="color: #FF0000; font-size: 36px;"></i>
-              <h2>Custom Software Development</h2>
-              <p>I specialize in developing tailored software solutions to meet the unique needs of businesses and organizations.</p>
+              <div class="service-icon">
+                  <i class="fas fa-code"></i>
+              </div>
+              <h2>Full Stack Solutions</h2>
+              <p>End-to-end development services combining frontend elegance with backend power for complete solutions.</p>
+              <div class="service-tech">
+                  <span>Full Stack</span>
+                  <span>DevOps</span>
+              </div>
           </div>
+          
           <div class="service">
-              <i class="fas fa-cogs" style="color: #FF0000; font-size: 36px;"></i>
-              <h2>Software Consultation</h2>
-              <p>I offer expert consultation services to help businesses optimize their software solutions.</p>
+              <div class="service-icon">
+                  <i class="fas fa-cogs"></i>
+              </div>
+              <h2>Technical Consulting</h2>
+              <p>Expert guidance on technology stack selection, architecture planning, and optimization strategies.</p>
+              <div class="service-tech">
+                  <span>Strategy</span>
+                  <span>Architecture</span>
+              </div>
           </div>
       </div>
   </div>
@@ -192,110 +325,221 @@
 
 <div id="projects" class="projects">
   <div class="firstpart">
-    <h1>PROJECTS</h1>
-    <p>Here you will find some of the personal and clients projects that I created with each project containing its own case study</p>
+    <h1>FEATURED <span class="gradient-text">PROJECTS</span></h1>
+    <p>A showcase of my work - from concept to deployment</p>
   </div>
-  <div id="image-carousel" class="splide">
-    <div class="splide__track">
-      <ul class="splide__list">
-        <li class="splide__slide">
-          <div class="carousel-card">
-            <a href="https://peshmoh.github.io/javascript-project/"><img src="images/js.jpg" alt="Project 1"></a>
-            <p>Javascript-project</p>
+  
+  <div class="projects-grid">
+      <a href="https://peshmoh.github.io/javascript-project/" target="_blank" class="project-card">
+          <div class="project-image-wrapper">
+              <img src="images/js.jpg" alt="JavaScript Project">
+              <div class="project-overlay">
+                  <i class="fas fa-external-link-alt"></i>
+              </div>
           </div>
-        </li>
-        <li class="splide__slide">
-          <div class="carousel-card">
-            <a href="https://peshmoh.github.io/istrepo/"><img src="images/STL Interior.jpg" alt="Project 2"></a>
-            <p>Recreating stl web</p>
+          <div class="project-info">
+              <h3>JavaScript Project</h3>
+              <p>Interactive web application showcasing modern JavaScript capabilities</p>
+              <div class="project-tags">
+                  <span>JavaScript</span>
+                  <span>Web</span>
+              </div>
           </div>
-        </li>
-        <li class="splide__slide">
-          <div class="carousel-card">
-            <a href="https://tm2118.github.io/project2repo/"><img src="images/3.jpg" alt="Project 3"></a>
-            <p>Car blog</p>
+      </a>
+
+      <a href="https://vimeo.com/1158872030?share=copy&fl=sv&fe=ci" target="_blank" class="project-card">
+        <div class="project-image-wrapper">
+            <img src="images/ec1.jpg" alt="Ecommerce Website">
+            <div class="project-overlay">
+                <i class="fas fa-external-link-alt"></i>
+            </div>
+        </div>
+        <div class="project-info">
+            <h3>E-Commerce Store</h3>
+            <p>Full-featured online shopping platform with cart functionality</p>
+            <div class="project-tags">
+                <span>E-Commerce</span>
+                <span>Laravel</span>
+            </div>
+        </div>
+    </a>
+
+      <a href="https://www.loom.com/share/d311e6cbd9bd4aababefe990f30ae79a" target="_blank" class="project-card">
+          <div class="project-image-wrapper">
+              <img src="images/STL Interior.jpg" alt="STL Interior">
+              <div class="project-overlay">
+                  <i class="fas fa-external-link-alt"></i>
+              </div>
           </div>
-        </li>
-        <li class="splide__slide">
-          <div class="carousel-card">
-            <a href="https://peshmoh.github.io/hotel/"><img src="images/images.jfif" alt="Project 4"></a>
-            <p>Hotel website</p>
+          <div class="project-info">
+              <h3>Event Ticketing system</h3>
+              <p>Modern interior design website with elegant UI/UX</p>
+              <div class="project-tags">
+                  <span>React</span>
+                  <span>Node js</span>
+              </div>
           </div>
-        </li>
-        <li class="splide__slide">
-          <div class="carousel-card">
-            <a href="https://peshmoh.github.io/politics-homepage/"><img src="images/orange.jpg" alt="Project 5"></a>
-            <p>politics homepage</p>
+      </a>
+
+      <a href="https://vimeo.com/1158881746?share=copy&fl=sv&fe=ci" target="_blank" class="project-card">
+        <div class="project-image-wrapper">
+            <img src="images/orange.jpg" alt="Politics Homepage">
+            <div class="project-overlay">
+                <i class="fas fa-external-link-alt"></i>
+            </div>
+        </div>
+        <div class="project-info">
+            <h3>Flutter pos app</h3>
+            <p>News aggregation platform with real-time updates</p>
+            <div class="project-tags">
+                <span>mobile app</span>
+                <span>flutter</span>
+            </div>
+        </div>
+    </a>
+
+      <a href="https://tm2118.github.io/project2repo/" target="_blank" class="project-card">
+          <div class="project-image-wrapper">
+              <img src="images/3.jpg" alt="Car Blog">
+              <div class="project-overlay">
+                  <i class="fas fa-external-link-alt"></i>
+              </div>
           </div>
-        </li>
-        <li class="splide__slide">
-          <div class="carousel-card">
-            <a href="https://peshmoh.github.io/emmorce/"><img src="images/ec1.jpg" alt="Project 6"></a>
-            <p>Ecommerce shoes web</p>
+          <div class="project-info">
+              <h3>Automotive Blog</h3>
+              <p>Dynamic blog platform for automotive enthusiasts</p>
+              <div class="project-tags">
+                  <span>Blog</span>
+                  <span>CMS</span>
+              </div>
           </div>
-        </li>
-      </ul>
-    </div>
+      </a>
+
+      <a href="https://peshmoh.github.io/hotel/" target="_blank" class="project-card">
+          <div class="project-image-wrapper">
+              <img src="images/images.jfif" alt="Hotel Website">
+              <div class="project-overlay">
+                  <i class="fas fa-external-link-alt"></i>
+              </div>
+          </div>
+          <div class="project-info">
+              <h3>Luxury Hotel Website</h3>
+              <p>Elegant booking platform with seamless user experience</p>
+              <div class="project-tags">
+                  <span>Booking</span>
+                  <span>UI/UX</span>
+              </div>
+          </div>
+      </a>
+
+
+      
   </div>
 </div>
+
 <div class="contact" id="contact">
     <div class="cont-frstpart">
-        <h1>CONTACT</h1>
-        <p>Feel free to Contact me by submitting the form below and I will get back to you as soon as <br>possible</p>
+        <h1>LET'S <span class="gradient-text">CONNECT</span></h1>
+        <p>Have a project in mind? Let's discuss how we can work together</p>
     </div>
-    <div class="form-container">
-      <form action="https://api.web3forms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="c5bf1c18-54f3-4b70-9746-0d0f17744982">
-        <div class="fname">
-          <label for="name">Name:</label> <br>
-          <input type="text" id="name" name="name" required> <br>
+    
+    <div class="contact-wrapper">
+        <div class="contact-info">
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h3>Email</h3>
+                <p>Drop me a line anytime</p>
+            </div>
+            
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3>Location</h3>
+                <p>Available for remote work</p>
+            </div>
+            
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h3>Response Time</h3>
+                <p>Within 24 hours</p>
+            </div>
         </div>
-        <div class="femail">
-          <label for="email">Email:</label> <br>
-          <input type="email" id="email" name="email" required> <br>
+        
+        <div class="form-container">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="c5bf1c18-54f3-4b70-9746-0d0f17744982">
+            
+            <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" required placeholder="Your name">
+                </div>
+                
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required placeholder="your@email.com">
+                </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea name="message" id="message" required placeholder="Tell me about your project..."></textarea>
+            </div>
+            
+            <button class="fbtn" type="submit">
+                <span>Send Message</span>
+                <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
         </div>
-        <div class="fmessage">
-          <label for="message">Message:</label> <br>
-          <textarea name="message" id="message" required></textarea>
-        </div>
-        <button class="fbtn" type="submit">Submit</button>
-      </form>
     </div>
 </div>
 
-<button class="scrollToTop"><i class="fa-solid fa-arrow-up"></i></button>
+<button class="scrollToTop">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
 
-  <div class="footer">
-      <div class="flex-footer">
+<div class="footer">
+    <div class="flex-footer">
         <div class="left-section">
-          <h4>PESH MOH</h4>
-          <p>A fullstack focused Web Developer building the Frontend and backend of Websites and Web <br>Applications that leads to the success of the overall product</p>
+          <div class="footer-logo">
+              <img src="images/2Ys9np-LogoMakr.png" alt="logo">
+              <h4>PESH MOH</h4>
+          </div>
+          <p>Full Stack Developer crafting digital experiences that matter. Specialized in Laravel, React, and modern web technologies.</p>
+        </div>
+
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </div>
 
         <div class="footer-icons">
-          <h4>SOCIAL</h4>
+          <h4>Connect</h4>
           <ul class="social-icons">
-            <li class="f-icons"><a href=""><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a></li>
-            <li class="f-icons"><a href=""><i class="fa-brands fa-instagram"style="color: white;"></i></a></li>
-            <li class="f-icons"><a href=""><i class="fa-brands fa-tiktok"  style="color: white;"></i></a></li>
-            <li class="f-icons"><a href=""><i class="fa-brands fa-whatsapp" style="color: white;"></i></a></li>
-            <li class="f-icons"><a href=""><i class="fa-brands fa-twitter" style="color: white"></i></a></li>
+            <li class="f-icons"><a href="https://github.com/Peshmoh?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+            <li class="f-icons"><a href="https://www.linkedin.com/in/pesh-moh-480807294/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li class="f-icons"><a href="https://x.com/pesh_moh?t=WIBb7Z1lXXKsOzgfykrL8Q&s=08" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+            <li class="f-icons"><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
           </ul>
         </div>
-      </div> 
-      
-      <hr>
-      <div class="copyright">
-        <p>@copyright2024.Made by Pesh Moh</p>
-      </div>
-  </div>
- 
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+    </div> 
+    
+    <hr>
+    <div class="copyright">
+        <p>© 2024 Pesh Moh</p>
+    </div>
+</div>
 
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-autoplay@1.0.2/dist/js/splide-extension-autoplay.min.js"></script>
-
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 <script src="main.js"></script>
 </body>
 </html>
