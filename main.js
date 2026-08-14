@@ -1,18 +1,3 @@
-// Typed.js Auto-typing Effect
-var typed = new Typed('.auto-type', {
-  strings: [
-      'Laravel Expert',
-      'React Developer',
-      'Node.js Developer',
-      'Vue.js Developer',
-      'Mobile Developer'
-  ],
-  typeSpeed: 100,
-  backSpeed: 80,
-  backDelay: 1500,
-  loop: true
-});
-
 // Sidebar Toggle
 function showSidebar() {
   const sidebar = document.querySelector('.sidebar');
